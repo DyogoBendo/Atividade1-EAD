@@ -7,14 +7,30 @@
 
     <style type="text/css">
 
-      div #interface{
-        width: 250em;
-        background-color: black;
+      body{
+        background-color: lightgray;
       }
-      div #exemplo{
-        background-color: whitesmoke;
-        padding-left: 2em;
+      #interface{
+        margin-left: 14%;
+        margin-top: -0.7%;
+        margin-bottom: -0.5%;
+        margin-right: -0.5%;
+        background-color: white;
+        padding: 20px
+      }
 
+      #indice{
+        background-color: gainsboro;
+        margin-right: 75%;
+      }
+
+      .exemplo{
+        background-color: gainsboro;
+        padding-left: 15px;
+      }
+      
+      b.destaque{
+        background-color: gainsboro;
       }
 
     </style>
@@ -26,12 +42,16 @@
       <h4>Origem: Wikipédia, a enciclopédia livre.</h4>
       <h6>(redireciondo de Html)</h6>
       <p>HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.<br>HyTime é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo. Um documento é visto como um conjunto de eventos concorrentes dependentes de tempo (como áudio, vídeo, etc.), conectados por hiperligações. O padrão é independente de outros padrões de processamento de texto em geral.<br> SGML é um padrão de formatação de textos. Não foi desenvolvido para hipertexto, mas tornou-se conveniente para transformar documentos em hiper-objetos e para descrever as ligações.</p>
-      <h4>Índice</h3>
-      <ol>
-        <li><a href="#historia">História</a></li>
-        <li><a href="#etiquetas">Etiquetas</a></li>
-        <li><a href="#edição">Edição de Documentos HTML</a></li>
-      </ol>
+
+    <div id="indice">
+        <h4>Índice</h4>
+        <ol>
+          <li><a href="#historia">História</a></li>
+          <li><a href="#etiquetas">Etiquetas</a></li>
+          <li><a href="#edição">Edição de Documentos HTML</a></li>
+        </ol>
+    </div>
+      
 
       <div id="historia">
         <h2>História</h2> 
@@ -42,35 +62,40 @@
       <div id="etiquetas">
         <h2>Etiquetas(Tags)</h2>
         <hr />
-        Todo documento HTML possui marcadores (do inglês: tags), palavras entre parênteses angulares (chevron) (< e >); esses marcadores são os comandos de formatação da linguagem. Um elemento é formado por um nome de marcador (tag), atributos, valores e filhos (que podem ser outros elementos ou texto). Os atributos modificam os resultados padrões dos elementos e os valores caracterizam essa mudança. Exemplo de um elemento simples (não possui filhos):<br>
+        <p>Todo documento HTML possui marcadores (do inglês: tags), palavras entre parênteses angulares (chevron) (< e >); esses marcadores são os comandos de formatação da linguagem. Um elemento é formado por um nome de marcador (tag), atributos, valores e filhos (que podem ser outros elementos ou texto). Os atributos modificam os resultados padrões dos elementos e os valores caracterizam essa mudança. Exemplo de um elemento simples (não possui filhos):</p><br>
 
-        <div id="exemplo">
+        <div class="exemplo">
           <br><b>&lt;hr&nbsp;/&gt;</b><br><br>
         </div>
 
         <br>
-        Exemplo de um elemento composto (possui filhos):<br>
-        <br>
+        <p>Exemplo de um elemento composto (possui filhos):</p><br>
 
-        <div id="exemplo">
+        <div class="exemplo">
           <br><b>&lt;a&nbsp;href="http://pt.wikipedia.org/"&gt;Wikip&eacute;dia&lt;/a&gt;</b><br><br>
         </div>
 
         <ul>
-          <li><u><b>&lt;a&gt;</b></u>&nbsp;&nbsp;  é o marcador de abertura</li>
-          <li><u><b>&lt;/a&gt;</b></u>&nbsp;  é o marcador de fechamento</li>
-          <li><u><b>href </b></u>&nbsp; é o atributo onde é definido a url, que será acessada ao clicar no link.</li>
+          <li><b class="destaque">&nbsp;&lt;a&gt;&nbsp;</b> é o marcador de abertura</li>
+          <li><b class="destaque">&nbsp;&lt;/a&gt;&nbsp;</b> é o marcador de fechamento</li>
+          <li><b class="destaque">&nbsp;href&nbsp;</b> é o atributo onde é definido a url, que será acessada ao clicar no link.</li>
         </ul>
 
-        Outro exemplo de elemento composto (possui filhos):
+        <p>Outro exemplo de elemento composto (possui filhos):</p>
 
-        &lt;a&nbsp;href="http://pt.wikipedia.org"&nbsp;target="_self"&gt;&lt;p&gt;Wikip&eacute;dia&lt;/p&gt;&lt;/a&gt
-        p = marcador que define um parágrafo.
-        a = marcador que define uma hiperligação.
-        href = atributo que define a url da hiperligação.
-        target = atributo que define a forma como a hiperligação será aberta.
-        _self = valor do atributo Target que define que a hiperligação será aberta na mesma guia.
-        / = define o fechamento do elemento
+        <div class="exemplo">
+          <br><b>&lt;a&nbsp;href="http://pt.wikipedia.org"&nbsp;target="_self"&gt;&lt;p&gt;Wikip&eacute;dia&lt;/p&gt;&lt;/a&gt</b><br><br>
+        </div>
+
+        <ul>
+          <li><b class="destaque">&nbsp;p&nbsp;</b> = marcador que define um parágrafo.</li>
+          <li><b class="destaque">&nbsp;a&nbsp;</b> = marcador que define uma hiperligação.</li>
+          <li><b class="destaque">&nbsp;href&nbsp;</b> = atributo que define a url da hiperligação.</li>
+          <li><b class="destaque">&nbsp;target&nbsp;</b> = atributo que define a forma como a hiperligação será aberta.</li>
+          <li><b class="destaque">&nbsp;_self&nbsp;</b> = valor do atributo Target que define que a hiperligação será aberta na mesma guia.</li>
+          <li><b class="destaque">&nbsp;/&nbsp;</b> = define o fechamento do elemento</li>
+        </ul>
+         
         Isso é necessário porque os marcadores servem para definir a formatação de uma porção do documento, e assim marcamos onde começa e termina o conteúdo que receberá a formatação ou marcação necessária, específica. Alguns elementos são chamados “vazios”, pois não marcam uma região de texto, apenas inserem algum elemento no documento.
 
         Cada elemento tem os seus atributos possíveis e os seus valores. Um exemplo, é o atributo href que pode ser usado com o elemento a, com o link mas que não pode ser usado com o elemento meta. Isso quer dizer que devemos saber exatamente quais os atributos e valores possíveis para cada elemento.
@@ -84,9 +109,12 @@
         <h2>Edição de Documentos HTML</h2>
         <hr />
         <p>Os documentos em HTML são arquivos de texto simples que podem ser criados e editados em qualquer editor de textos comum, como o Bloco de Notas do Windows, ou o TextEdit, do Macintosh. Para facilitar a produção de documentos, no mercado existem editores HTML específicos, com recursos sofisticados, que facilitam a realização de tarefas repetitivas, inserção de objetos, elaboração de tabelas e outros recursos (Ver lista abaixo). Basicamente dividem-se em dois tipos:
+        
+        <ul>
+          <li>Editores de texto fonte: inserem automaticamente os marcadores, orientando a inserção de atributos e </li>marcações
+          <li>Editores WYSIWYG: oferecem ambiente de edição com um "esboço" resultado final das marcações</li>
+        </ul>
 
-        Editores de texto fonte: inserem automaticamente os marcadores, orientando a inserção de atributos e marcações
-        Editores WYSIWYG: oferecem ambiente de edição com um "esboço" resultado final das marcações</p>
       </div>
     </div>  
   </body>
