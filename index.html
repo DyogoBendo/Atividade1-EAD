@@ -14,13 +14,15 @@
         line-height: 20px;
       }
       #interface{
-        margin-left: 14%;
-        margin-top: -0.7%;
+        margin-left: 200px;
+        margin-top: 25px;
         margin-bottom: -0.5%;
         margin-right: -0.5%;
         background-color: white;
+        border: 1px solid;
+        border-color:lightblue;
         padding: 25px;
-        box-shadow: -6px 7px 15px 0px rgba(0, 0, 0, 0.43);
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.37);
       }
 
       #indice{
@@ -28,6 +30,17 @@
         margin-right: 75%;
         border: 2px solid;
         border-color: lightgray;
+      }
+
+      h1{
+        font-family:Georgia, 'Times New Roman', Times, serif;   
+      }
+    
+      img#logo{
+        position:absolute;
+        margin-top: 0px;
+        left: 13px;
+        size: 25%;
       }
 
       .exemplo{
@@ -38,7 +51,7 @@
         border: 2px solid;
         border-color: lightgray;
       }
-      
+
       b.destaque{
         background-color: gainsboro;
         border: 2px solid;
@@ -53,6 +66,11 @@
 
   </head>
   <body>
+
+    <div id=lateral>
+      <img id="logo" src="images/logo_IF.png">
+    </div>
+
     <div id="interface"> 
       <h1>HTML</h1>
       <hr />
@@ -69,15 +87,14 @@
         </ol>
     </div>
       
-
       <div id="historia">
-        <h2>História</h2> 
+        <h1>História</h1> 
         <hr />
         <p>Tim Berners-Lee (físico britânico) criou o HTML original (e outros protocolos associados como o HTTP) em uma estação NeXTcube usando o ambiente de desenvolvimento NeXTSTEP. Na época a linguagem não era uma especificação, mas uma coleção de ferramentas para resolver um problema de Tim: a comunicação e disseminação das pesquisas entre ele e seu grupo de colegas. Sua solução, combinada com a então emergente internet pública (que tornar-se-ia a Internet) ganhou atenção mundial.<br> As primeiras versões do HTML foram definidas com regras sintáticas flexíveis, o que ajudou aqueles sem familiaridade com a publicação na Web. Através do tempo, a utilização de ferramentas para autoria de HTML aumentou, assim como a tendência em tornar a sintaxe cada vez mais rígida. Apesar disso, por questões históricas (retrocompatibilidade), os navegadores ainda hoje conseguem interpretar páginas web que estão longe de ser um código HTML válido.<br> A linguagem foi definida em especificações formais na década de 1990, inspiradas nas propostas originais de Tim Berners-Lee em criar uma linguagem baseada em SGML para a Internet. A primeira publicação foi esboçada por Berners-Lee e Dan Connolly, e publicada em 1993 na IETF como uma aplicação formal para o SGML (com uma DTD em SGML definindo a gramática). A IETF criou um grupo de trabalho para o HTML no ano seguinte, e publicou o HTML 2.0 em 1995. Desde 1996, as especificações HTML vêm sendo mantidas, com o auxílio de fabricantes de software, pelo World Wide Web Consortium (W3C).[1] Apesar disso, em 2000 a linguagem tornou-se também uma norma internacional (ISO/IEC 15445:2000). A recomendação HTML 4.01 foi publicada no final de 1999 pelo W3C. Uma errata ainda foi lançada em 2001.<br> Desde a publicação do HTML 3.5 no final de 1997, o grupo de trabalho da W3C tem cada vez mais — e de 2002 a 2006, de forma exclusiva — focado no desenvolvimento do XHTML, uma especificação HTML baseada em XML que é considerada pela W3C como um sucessor do HTML.[2][3][4] O XHTML faz uso de uma sintaxe mais rigorosa e menos ambígua para tornar o HTML mais simples de ser processado e estendido.<br>Em janeiro de 2008 o W3C publicou a especificação do HTML5 como Working Draft. Apesar de sua sintaxe ser semelhante a de SGML, o HTML5 abandonou qualquer tentativa de ser uma aplicação SGML e, definiu explicitamente sua própria serialização "html", além de uma alternativa baseada em XML, o XHTML5.<br>Várias versões HTML foram publicadas:<br></p>    
       </div>
 
       <div id="etiquetas">
-        <h2>Etiquetas(Tags)</h2>
+        <h1>Etiquetas(Tags)</h1>
         <hr />
         <p>Todo documento HTML possui marcadores (do inglês: tags), palavras entre parênteses angulares (chevron) (< e >); esses marcadores são os comandos de formatação da linguagem. Um elemento é formado por um nome de marcador (tag), atributos, valores e filhos (que podem ser outros elementos ou texto). Os atributos modificam os resultados padrões dos elementos e os valores caracterizam essa mudança. Exemplo de um elemento simples (não possui filhos):</p><br>
 
@@ -123,7 +140,7 @@
       </div>
 
       <div id="edição">
-        <h2>Edição de Documentos HTML</h2>
+        <h1>Edição de Documentos HTML</h1>
         <hr />
         <p>Os documentos em HTML são arquivos de texto simples que podem ser criados e editados em qualquer editor de textos comum, como o Bloco de Notas do Windows, ou o TextEdit, do Macintosh. Para facilitar a produção de documentos, no mercado existem editores HTML específicos, com recursos sofisticados, que facilitam a realização de tarefas repetitivas, inserção de objetos, elaboração de tabelas e outros recursos (Ver lista abaixo). Basicamente dividem-se em dois tipos:
         
