@@ -8,7 +8,10 @@
     <style type="text/css">
 
       body{
-        background-color: lightgray;
+        background-color: whitesmoke;
+        font-family: Arial, Helvetica, serif;
+        font-size: 15px;
+        line-height: 20px;
       }
       #interface{
         margin-left: 14%;
@@ -16,7 +19,8 @@
         margin-bottom: -0.5%;
         margin-right: -0.5%;
         background-color: white;
-        padding: 20px
+        padding: 25px;
+        box-shadow: -6px 7px 15px 0px rgba(0, 0, 0, 0.43);
       }
 
       #indice{
@@ -27,6 +31,8 @@
       .exemplo{
         background-color: gainsboro;
         padding-left: 15px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 14px;
       }
       
       b.destaque{
@@ -34,6 +40,7 @@
       }
 
     </style>
+
   </head>
   <body>
     <div id="interface"> 
@@ -65,14 +72,14 @@
         <p>Todo documento HTML possui marcadores (do inglês: tags), palavras entre parênteses angulares (chevron) (< e >); esses marcadores são os comandos de formatação da linguagem. Um elemento é formado por um nome de marcador (tag), atributos, valores e filhos (que podem ser outros elementos ou texto). Os atributos modificam os resultados padrões dos elementos e os valores caracterizam essa mudança. Exemplo de um elemento simples (não possui filhos):</p><br>
 
         <div class="exemplo">
-          <br><b>&lt;hr&nbsp;/&gt;</b><br><br>
+          <br>&lt;<b style="color: darkolivegreen;">hr</b>&nbsp;/&gt;<br><br>
         </div>
 
         <br>
         <p>Exemplo de um elemento composto (possui filhos):</p><br>
 
         <div class="exemplo">
-          <br><b>&lt;a&nbsp;href="http://pt.wikipedia.org/"&gt;Wikip&eacute;dia&lt;/a&gt;</b><br><br>
+          <br>&lt;<b style="color: darkolivegreen;"> a </b>&nbsp;<b style="color: olivedrab;"> href=</b> <b style="color:red"> "http://pt.wikipedia.org/" </b>&gt;Wikip&eacute;dia&lt;/<b style="color:darkolivegreen"> a </b>&gt;<br><br>
         </div>
 
         <ul>
@@ -84,7 +91,7 @@
         <p>Outro exemplo de elemento composto (possui filhos):</p>
 
         <div class="exemplo">
-          <br><b>&lt;a&nbsp;href="http://pt.wikipedia.org"&nbsp;target="_self"&gt;&lt;p&gt;Wikip&eacute;dia&lt;/p&gt;&lt;/a&gt</b><br><br>
+          <br>&lt;<b style="color:darkolivegreen"> a </b>&nbsp; <b style="coloro:olivedrab"> href</b>= <b style="color:red">"http://pt.wikipedia.org" </b> &nbsp; <b style="color:olivedrab"> target</b> = <b style="color:red">"_self"</b>&gt;&lt;<b style="color:darkolivegreen"> p </b>&gt;Wikip&eacute;dia&lt;<b style="color:darkolivegreen">/p</b>&gt;&lt;<b style="color:darkolivegreen">/a</b>&gt;<br><br>
         </div>
 
         <ul>
